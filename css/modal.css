@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(46, 47, 66, 0.4);
   width: 100%;
   height: 100%;
 
@@ -109,7 +109,7 @@
   width: 100%;
   height: 40px;
   padding-left: 38px;
-  color: var(--color-dark);
+  color: #434455;
   background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -145,7 +145,7 @@
   height: 120px;
   padding: 8px 16px;
   resize: none;
-  color: var(--color-dark);
+  color: #434455;
   background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -169,7 +169,6 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  column-gap: 4px;
   cursor: pointer;
 }
 
@@ -180,10 +179,8 @@
   flex: 0 0 16px;
   width: 16px;
   height: 16px;
-  margin-right: 4px;
-  font-size: 12px;
-  line-height: 1;
-  color: transparent;
+  margin-right: 8px;
+  color: #f4f4fd;
   background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
@@ -193,9 +190,17 @@
 }
 
 .modal-checkbox:checked + .modal-policy-label .modal-checkmark {
-  color: var(--color-white);
   background-color: var(--color-pressed);
   border-color: var(--color-pressed);
+}
+
+.modal-check-icon {
+  opacity: 0;
+  fill: currentColor;
+}
+
+.modal-checkbox:checked + .modal-policy-label .modal-check-icon {
+  opacity: 1;
 }
 
 .modal-checkbox:focus + .modal-policy-label .modal-checkmark {
